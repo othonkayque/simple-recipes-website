@@ -1,0 +1,86 @@
+@font-face {
+    font-family: young;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: outfit;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root {
+    --brown: rgb(87, 53, 19);
+    --preparation-time: rgb(260, 245, 245);
+    --text-preparation-time: rgb(131, 17, 30);
+    --dark-grey: rgb(30, 30, 30);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h4 {
+    font-family: young;
+    color: var(--brown);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--dark-grey);
+}
+
+h3 {
+    color: var(--text-preparation-time);
+}
+
+h4 {
+    color: var(--text-preparation-time);
+}
+
+p, ul, ol, span, h3{
+    font-family: outfit;
+}
+p, ul, ol, span{
+    color: var(--dark-grey)
+}
+
+body, html{
+    margin: 0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 900px;
+}
+
+.container .omelete {
+    width: 900px;
+    border-radius: 20px;
+}
+
+.container .preparation-time {
+    background-color: var(--preparation-time);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.container .preparation-time h3,
+.container .preparation-time ul{
+    margin: 20px 40px;
+}
+
+.container .nutrition {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    margin-left: 30px;
+}
+
+.container .instructions ol,
+.container .Ingredients ul,
+.container .preparation-time ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
